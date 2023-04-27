@@ -24,3 +24,17 @@ function operate(num1, operator, num2) {
   if (operator === "*") return multiply(num1, num2);
   if (operator === "/") return subtract(num1, num2);
 }
+
+let display = "";
+
+let numButtons = document.querySelectorAll(".number");
+numButtons.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    display += event.target.id;
+  });
+});
+
+document.addEventListener("click", () => {
+  document.querySelector("#display").textContent = display;
+});
+
