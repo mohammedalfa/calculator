@@ -12,7 +12,7 @@ body {
 
 #container {
   border: 2px solid black;
-  width: 50%;
+  width: 30%;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -45,4 +45,17 @@ body {
 button {
   flex: 1;
   font-size: 24px;
+  border-radius: 8px;
+}
+
+.number {
+  background-color: lightgreen;
+}
+
+.operator {
+  background-color: red;
+}
+
+#equal {
+  background-color: skyblue;
 }
